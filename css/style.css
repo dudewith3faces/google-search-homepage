@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-size: 12;
+    font-family: Arial, sans-serif;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 5px;
+    font-size: 13px;
+  }
+
+  .textlink:hover {
+    text-decoration: underline;
+  }
+
+nav ul img {
+    width: 15px;
+    height 15px;
+}
+
+  a:link,
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  nav {
+    text-align: right;
+    margin-top: 25px;
+  }
+
+  .button.blue {
+    background-color: #4D90FE;
+    background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+    background-image: -moz-linear-gradient(top, #4d90fe, #4787ed);
+    background-image: -ms-linear-gradient(top, #4d90fe, #4787ed);
+    background-image: -o-linear-gradient(top, #4d90fe, #4787ed);
+    background-image: linear-gradient(top, #4d90fe, #4787ed);
+    padding: 8px;
+    border: 1px solid #3079ED;
+    color: white;
+  }
+
+  .button.blue:hover {
+    border: 1px solid #2F5BB7;
+    background-color: #357AE8;
+    background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8);
+    background-image: -moz-linear-gradient(top, #4d90fe, #357ae8);
+    background-image: -ms-linear-gradient(top, #4d90fe, #357ae8);
+    background-image: -o-linear-gradient(top, #4d90fe, #357ae8);
+    background-image: linear-gradient(top, #4d90fe, #357ae8);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+  }
+
+  #central {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .voice {
+    background: url(//www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+    background-size: 24px;
+    vertical-align: middle;
+  }
+
+  .form-btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  input[type='text'] {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -37px;
+    height: 34px;
+    font-size: 16px;
+  }
+
+  button {
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+  }
+
+
+
+  footer ul li {
+    display: inline;
+    color: #c6c6c6;
+    margin: 10px;
+  }
+
+  .left:hover,
+  .right:hover {
+    text-decoration: underline;
+  }
+
+/* footer */
+footer {
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 13px;
+    line-height: 40px;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer a {
+    color: #c6c6c6;
+}
+
+footer a:link,
+  footer a:visited {
+    color: #5c5c5c;
+    text-decoration: none;
+}
+
+.lh {
+    line-height: 40px;
+}
+
+.fb {
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.foot1 {
+    margin-left: 30px;
+    text-align: left;
+}
+
+footer .left a {
+    float: left;
+}
+
+footer .left a, footer .right a {
+    padding-left: 27px;
+}
+
+footer .right {
+    margin-right: 30px;
+}
+
+footer .right a {
+    float: right;
+}
