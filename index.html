@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Google Mock</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#" class="textlink"> Gmail </a></li>
-        <li><a href="#" class="textlink"> Images </a></li>
-        <li>
-          <a href="#">
-            <img
-              src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fflatfrogblog.com%2Fwp-content%2Fuploads%2F2014%2F01%2Fapp-launcher-150x150.png&container=blogger&gadget=a&rewriteMime=image%2F*"
-            />
-          </a>
-        </li>
-        <li><a href="#" class="button blue"> Sign in </a></li>
-      </ul>
-    </nav>
 
-    <div id="central">
-      <!-- <img src="https://www.google.com/images/srpr/logo5w.png" title="Google" /> -->
-      <img
-        alt="Google"
-        height="92"
-        id="hplogo"
-        src="img/googlelogo_color_272x92dp.png"
-        style="padding-top:109px"
-        width="272"
-        data-atf="1"
-        data-iml="1580492260392"
-      />
-      <form>
-        <div class="">
-          <span
-            ><svg
-              focusable="false"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-              ></path></svg
-          ></span>
-          <input type="text" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Google Mock</title>
+</head>
+
+<body>
+  <nav>
+    .
+    <span>
+      <a href="#">Gmail</a></span>
+    <span>
+      <a href="#">Images</a></span>
+    <span class="grid"></span>
+    <span style="margin-top: 13px;"><img src="./img/photo.jpg" alt="Apps"></span>
+  </nav>
+
+  <section class="home">
+    <img alt="Google" height="92" id="hplogo" src="img/google.png" style="padding-top:109px" width="272" data-atf="1"
+      data-iml="1580492260392" />
+    <form>
+      <div class="inp">
+        <div class="inp1" style="min-height: 44px;"><span class="search">
+          </span>
+          <input type="text" style="margin-top: 5px;" />
           <span class="voice"></span>
         </div>
-        <div class="form-btn">
-          <button>Google Search</button>
-          <button>I'm feeling lucky</button>
-        </div>
-      </form>
+        <span class="report"><a href="#">Report inappropritate predictions</a></span>
+      </div>
+      <div class="form-btn">
+        <button>Google Search</button>
+        <button>I'm feeling lucky</button>
+      </div>
+    </form>
+    <div class="lang">
+      Google offered in:
+      <a href="#">Hausa</a>
+      <a href="#">Igbo</a>
+      <a href="#">Èdè Yorùbá</a>
+      <a href="#">Nigerian Pidgin</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fb">
+      <div class="lh cty"><span class="">Nigeria</span></div>
     </div>
 
-    <footer>
-      <div class="fb">
-        <div class="lh cty"><span class="">Nigeria</span></div>
-      </div>
+    <div class="lh left">
+      <a href="#"> Advertising </a><a href="#"> Business </a><a href="#"> About </a><a href="#">How Search works</a>
+    </div>
+    <div class="lh right">
+      <a href="#"> Privacy </a><a href="#"> Terms </a><a href="#"> Settings </a>
+    </div>
+  </footer>
+  <script src="js/layout.js"></script>
+  <script src="js/getData.js"></script>
+  <script src="js/autocomplete.js"></script>
+  <script src="js/search.js"></script>
+</body>
 
-      <div class="lh left">
-        <a href="#"> Advertising </a><a href="#"> Business </a
-        ><a href="#"> About </a><a href="#">How Search works</a>
-      </div>
-      <div class="lh right">
-        <a href="#"> Privacy </a><a href="#"> Terms </a
-        ><a href="#"> Settings </a>
-      </div>
-    </footer>
-  </body>
 </html>
