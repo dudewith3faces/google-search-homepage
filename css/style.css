@@ -191,9 +191,10 @@ section.sub a.active {
     width: 100%;
     font-weight: bold;
     background: white;
+    cursor: pointer;
   }
-section.sub
-  li.inp1:hover {
+
+ ul li:hover {
     background: #e7eaf0;
   }
 
