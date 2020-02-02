@@ -12,8 +12,8 @@ This is a mock of google homepage and search result page.
 To preview the project it is advices to serve it else ajax fetch will be unable to get the mock data cause of CORS restriction;
 
 NPM librarys to use are to start the project:
-- [Serve]: `npm i -g serve`
-- [Live Server]: `npm i -g live-server`
+- [Serve](https://www.npmjs.com/package/serve): `npm i -g serve`
+- [Live Server](https://www.npmjs.com/package/live-server): `npm i -g live-server`
 
 
 Then start the project from your cli with the command once either of those libraries are installed:
