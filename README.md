@@ -17,5 +17,5 @@ NPM librarys to use are to start the project:
 
 
 Then start the project from your cli with the command once either of those libraries are installed:
-- [Serve]: `serve`
-- [Live Server]: `live-server`
+- Serve: `serve`
+- Live Server: `live-server`
