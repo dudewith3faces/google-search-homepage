@@ -1,12 +1,18 @@
 function autocomplete(arr, string) {
     if (!Array.isArray(arr)) return [];
 
+    let count = 5;
     const sug = [];
     sug.length = 0;
 
-    for (const a of arr)
-        if (a.includes(string))
+    for (const a of arr) {
+        if (count === 0) break;
+
+        if (a.includes(string)) {
             sug.push(a)
+            count--;
+        }
+    }
 
     return sug
 }

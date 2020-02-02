@@ -5,10 +5,7 @@ function liSearch(string) {
 (function () {
     const input = document.querySelector("input");
     if (window.location.pathname === "/search.html") {
-        if (input.value) {
-            console.log(input)
-            return;
-        }
+        if (input.value) return;
 
         const search = window.location.search.replace("?q=", "").replace(/\+/g, " ") || "rilwan adams";
 
