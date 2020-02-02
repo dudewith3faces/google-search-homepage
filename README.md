@@ -5,7 +5,7 @@ This is a mock of google homepage and search result page.
 
 ## Features
 - Suggestion on the input
--
+- Search keyword adds to result page
 
 
 ## Installation
