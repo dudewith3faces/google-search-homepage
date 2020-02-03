@@ -1,67 +1,64 @@
 function autocomplete(arr, string) {
-    if (!Array.isArray(arr)) return [];
+  if (!Array.isArray(arr)) return [];
 
-    let count = 5;
-    const sug = [];
-    sug.length = 0;
+  let count = 5;
+  const sug = [];
+  sug.length = 0;
 
-    for (const a of arr) {
-        if (count === 0) break;
+  for (const a of arr) {
+    if (count === 0) break;
 
-        if (a.includes(string)) {
-            sug.push(a)
-            count--;
-        }
+    if (a.toLowerCase().includes(string.toLowerCase())) {
+      sug.push(a);
+      count--;
     }
+  }
 
-    return sug
+  return sug;
 }
 
 function layAutocomplete(string) {
-    const li = document.createElement("li");
-    const span = document.createElement("span");
-    const span2 = document.createElement("span");
+  const li = document.createElement('li');
+  const span = document.createElement('span');
+  const span2 = document.createElement('span');
 
-    li.classList.add("inp1");
-    span.classList.add("search")
-    span2.appendChild(document.createTextNode(string));
+  li.classList.add('inp1');
+  span.classList.add('search');
+  span2.appendChild(document.createTextNode(string));
 
-    li.onclick = () => liSearch(string);
+  li.onclick = () => liSearch(string);
 
+  li.appendChild(span);
+  li.appendChild(span2);
 
-    li.appendChild(span)
-    li.appendChild(span2)
-
-    return li;
+  return li;
 }
 
 async function getAutocomplete() {
-    const res = await fetch("../data/search.json");
-    const data = await res.json();
-    return data.companies;
+  const res = await fetch('../data/search.json');
+  const data = await res.json();
+  return data.companies;
 }
 
-
 async function suggestions(event) {
-    const uli = document.querySelector("ul");
-    const report = document.querySelector(".report");
+  const uli = document.querySelector('ul');
+  const report = document.querySelector('.report');
 
-    if (uli) {
-        uli.remove();
-        report.classList.remove("show")
-    }
+  if (uli) {
+    uli.remove();
+    report.classList.remove('show');
+  }
 
-    if (!input.value.trim()) return
+  if (!input.value.trim()) return;
 
-    const data = await getAutocomplete();
-    const res = autocomplete(data, input.value);
+  const data = await getAutocomplete();
+  const res = autocomplete(data, input.value);
 
-    if (res.length === 0) return;
+  if (res.length === 0) return;
 
-    const ul = document.createElement("ul");
-    for (const r of res)
-        ul.appendChild(layAutocomplete(r))
+  const ul = document.createElement('ul');
+  for (const r of res) ul.appendChild(layAutocomplete(r));
 
-    report.parentNode.insertBefore(ul, report);
-    report.classList.add("show");
+  report.parentNode.insertBefore(ul, report);
+  report.classList.add('show');
 }
